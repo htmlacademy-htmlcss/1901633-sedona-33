@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Кропотов](https://up.htmlacademy.ru/htmlcss/33/user/1901633).
-* Наставник: [Максим Боровик] (https://htmlacademy.ru/profile/mouxez).
+* Наставник: Максим Боровик (https://htmlacademy.ru/profile/mouxez).
 
 ---
 
