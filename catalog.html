@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css" 
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">
-              <img src="#" alt="Логотип" />
+            <a class="navigation-link">
+              <img src="images/logo-sedona.svg" width="139" height="70" alt="Логотип города Седона" href="index.html" />
             </a>
           </li>
           <li class="navigation-item">
@@ -20,7 +21,7 @@
             <a class="navigation-link" href="index.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
@@ -129,42 +130,42 @@
 
       <ul class="choice-housing">
         <li class="choice-housing-item">
-          <a class="choise-housing-link" href="#">
-            <img class="choise-housing-image" src="images/catalog/cataloghotel-1.jpg" width="300" height="206" alt="Фотография гостиницы Amara Resort & Spa">
-            <h3 class="choise-housing-title">Amara Resort & Spa </h3>
+          <a class="choice-housing-link" href="#">
+            <img class="choice-housing-image" src="images/catalog/cataloghotel-1.jpg" width="300" height="206" alt="Фотография гостиницы Amara Resort & Spa">
+            <h3 class="choice-housing-title">Amara Resort & Spa </h3>
           </a>
-          <p class="choise-housin-subtitle">Гостиница</p>
-          <p class="choise-housing-price">от 4000 р</p>
+          <p class="choice-housin-subtitle">Гостиница</p>
+          <p class="choice-housing-price">от 4000 р</p>
           <button class="btn-housing-more" type="button">Подробнее</button>
           <button class="btn-housing-favorites" type="button">В избранное</button>
         </li>
         <li class="choice-housing-item">
-          <a class="choise-housing-link" href="#">
-            <img class="choise-housing-image" src="images/catalog/cataloghotel-2.jpg" width="300" height="206" alt="Фотография гостиницы Desert Quail Inn">
-            <h3 class="choise-housing-title">Desert Quail Inn </h3>
+          <a class="choice-housing-link" href="#">
+            <img class="choice-housing-image" src="images/catalog/cataloghotel-2.jpg" width="300" height="206" alt="Фотография гостиницы Desert Quail Inn">
+            <h3 class="choice-housing-title">Desert Quail Inn </h3>
           </a>
-          <p class="choise-housin-subtitle">Гостиница</p>
-          <p class="choise-housing-price">от 3000 р</p>
+          <p class="choice-housin-subtitle">Гостиница</p>
+          <p class="choice-housing-price">от 3000 р</p>
           <button class="btn-housing-more" type="button">Подробнее</button>
           <button class="btn-housing-favorites" type="button">В избранное</button>
         </li>
         <li class="choice-housing-item">
-          <a class="choise-housing-link" href="#">
-            <img class="choise-housing-image" src="images/catalog/cataloghotel-3.jpg" width="300" height="206" alt="Фотография гостиницы Villas at Poco Diablo">
-            <h3 class="choise-housing-title">Villas at Poco Diablo </h3>
+          <a class="choice-housing-link" href="#">
+            <img class="choice-housing-image" src="images/catalog/cataloghotel-3.jpg" width="300" height="206" alt="Фотография гостиницы Villas at Poco Diablo">
+            <h3 class="choice-housing-title">Villas at Poco Diablo </h3>
           </a>
-          <p class="choise-housin-subtitle">Гостиница</p>
-          <p class="choise-housing-price">от 2000 р</p>
+          <p class="choice-housin-subtitle">Гостиница</p>
+          <p class="choice-housing-price">от 2000 р</p>
           <button class="btn-housing-more" type="button">Подробнее</button>
-          <button class="btn-housing-favorites active" type="button">В избранном</button>
+          <button class="btn-housing-favorites btn-housing-favorites-active" type="button">В избранном</button>
         </li>
         <li class="choice-housing-item">
-          <a class="choise-housing-link" href="#">
-            <img class="choise-housing-image" src="images/catalog/cataloghotel-4.jpg" width="300" height="206" alt="Фотография гостиницы GreenTree Inn">
-            <h3 class="choise-housing-title">GreenTree Inn </h3>
+          <a class="choice-housing-link" href="#">
+            <img class="choice-housing-image" src="images/catalog/cataloghotel-4.jpg" width="300" height="206" alt="Фотография гостиницы GreenTree Inn">
+            <h3 class="choice-housing-title">GreenTree Inn </h3>
           </a>
-          <p class="choise-housin-subtitle">Гостиница</p>
-          <p class="choise-housing-price">от 3000 р</p>
+          <p class="choice-housin-subtitle">Гостиница</p>
+          <p class="choice-housing-price">от 3000 р</p>
           <button class="btn-housing-more" type="button">Подробнее</button>
           <button class="btn-housing-favorites" type="button">В избранное</button>
         </li>
@@ -172,7 +173,7 @@
       <button class="download" type="button">Загрузить ещё</button>
       <ul class="pagination">
        <li class="pagination-item">
-          <a class="pagination-link-active">1</a>
+          <a class="pagination-link pagination-link-active">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -198,10 +199,11 @@
         <option value="1">1</option>
       </select>
       
-        <h2 class="email-title-inner">Подпишитесь на рассылку</h2>
-        <p class="email-subtitle-inner">Только полезная информация и никакого спама,честное бойскаутское!</p>
-        <form class="email-form-inner" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" />
+        <h2 class="email-title email-title-inner">Подпишитесь на рассылку</h2>
+        <p class="email-subtitle email-subtitle-inner">Только полезная информация и никакого спама,честное бойскаутское!</p>
+        <form class="email-form email-form-inner" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="email-field"></label>
+          <input class="field" placeholder="Ваш e-mail" type="email" id="email-field" />
           <button class="button-email" type="submit" value="Подписаться">
             <span class="visually-hidden">Подписаться</span>
           </button>
@@ -219,7 +221,7 @@
           </div>
     
           <div class="developer">
-            <a href="https://htmlacademy.ru/"><img src="/images/logohtml.png" alt="Логотип HTML академии"/></a>
+            <a href="https://htmlacademy.ru/"><img src="#" alt="Логотип HTML академии"/></a>
           </div>
         </footer>
       </section>
