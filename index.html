@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list-logo">
           <li class="navigation-item-logo">
             <a class="navigation-link">
               <img
@@ -20,16 +20,20 @@
               />
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
         </ul>
+        <div class="navigation-list-wrapper">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -47,6 +51,7 @@
         </ul>
       </nav>
     </header>
+    
     <main class="main main-container">
       <div class="index-main">
         <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
@@ -57,6 +62,7 @@
           height="352"
           alt="Добро пожаловать в великолепную Седону"
         />
+        <img class="img-main-bottom" src="/images/index-background-bottom.png"/>
       </div>
       <section class="info">
         <h2 class="visually-hidden">Краткая информация о Седоне</h2>
@@ -74,7 +80,7 @@
         <div class="advantages-wrapper">
           <div class="advantages-content">
             <h3 class="advantages-title advantages-title-white">
-              настоящий городок
+              настоящий <br /> городок
             </h3>
             <span class="advantages-number advantages-number-white">-№1-</span>
             <p class="advantages-description advantages-description-white">
@@ -94,7 +100,13 @@
         <ul class="advantages-list">
           <li class="advantages-item">
             <div class="advantages-list-content">
-              <img class="advantages-img" src="/images/advantages-house.svg" width="75" height="72" alt="Значок дома" />
+              <img
+                class="advantages-img-icon"
+                src="/images/advantages-house.svg"
+                width="75"
+                height="72"
+                alt="Значок дома"
+              />
               <h3 class="advantages-title">жильё</h3>
               <p class="advantages-description">
                 Рекомендуем пожить в настоящем мотеле, всё как в кино!
@@ -103,7 +115,13 @@
           </li>
           <li class="advantages-item advantages-item-bgwhite">
             <div class="advantages-list-content">
-              <img class="advantages-img" src="/images/advantages-food.svg" width="74" height="70" alt="Значок еды" />
+              <img
+                class="advantages-img-icon"
+                src="/images/advantages-food.svg"
+                width="74"
+                height="70"
+                alt="Значок еды"
+              />
               <h3 class="advantages-title">еда</h3>
               <p class="advantages-description">
                 Всегда заказывайте топовый фирменный бургер, вы не
@@ -113,7 +131,13 @@
           </li>
           <li class="advantages-item">
             <div class="advantages-list-content">
-              <img class="advantages-img" src="/images/advantages-souvenirs.svg" width="64" height="76" alt="Значок сувениров" />
+              <img
+                class="advantages-img-icon"
+                src="/images/advantages-souvenirs.svg"
+                width="64"
+                height="76"
+                alt="Значок сувениров"
+              />
               <h3 class="advantages-title">сувениры</h3>
               <p class="advantages-description">
                 Не только китайского, но и настоящего местного производства!
@@ -132,7 +156,7 @@
           </div>
           <div class="advantages-content">
             <h3 class="advantages-title advantages-title-white">
-              Там есть мост дьявола
+              Там есть <br /> мост дьявола
             </h3>
             <span class="advantages-number advantages-number-white">-№2-</span>
             <p class="advantages-description advantages-description-white">
@@ -144,7 +168,7 @@
         <ul class="advantages-list">
           <li class="advantages-item">
             <div class="advantages-list-content">
-              <h3 class="advantages-title">небольшая площадь</h3>
+              <h3 class="advantages-title">небольшая <br /> площадь</h3>
               <span class="advantages-number"> -№3-</span>
               <p class="advantages-description">
                 Все достопримечательности находятся очень близко
@@ -153,7 +177,7 @@
           </li>
           <li class="advantages-item">
             <div class="advantages-list-content bgspecial">
-              <h3 class="advantages-title">красивая дорога</h3>
+              <h3 class="advantages-title">красивая <br /> дорога</h3>
               <span class="advantages-number"> -№4-</span>
               <p class="advantages-description">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -162,7 +186,7 @@
           </li>
           <li class="advantages-item">
             <div class="advantages-list-content">
-              <h3 class="advantages-title">мало туристов</h3>
+              <h3 class="advantages-title">мало <br /> туристов</h3>
               <span class="advantages-number"> -№5-</span>
               <p class="advantages-description">
                 Большинство едет в Гранд Каньон и толпится там
@@ -195,7 +219,8 @@
           method="post"
         >
           <input class="field" placeholder="Ваш e-mail" type="email" />
-          <button class="button-email" type="submit" value="Подписаться">Подписаться
+          <button class="button-email" type="submit" value="Подписаться">
+            Подписаться
             <span class="visually-hidden">Подписаться</span>
           </button>
         </form>
