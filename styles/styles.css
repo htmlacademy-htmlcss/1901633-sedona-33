@@ -64,7 +64,7 @@ body {
 
 .navigation-item {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 
 .navigation-item:not(:last-child) {
@@ -91,10 +91,10 @@ body {
 .navigation-user {
   max-width: 400px;
   margin-left: auto;
-  text-transform: uppercase;
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding-top: 20px;
   font-size: 20px;
@@ -105,6 +105,37 @@ body {
   text-decoration: none;
   padding: 0;
   margin: 0;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
+.navigation-button-item {
+  display: inline-block;
+  height: 20px;
+  min-width: 130px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 9px 15px;
+  background-color: #756257;
+  border-radius: 4px;
+  border: none;
+  margin-left: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-right: 70px;
 }
 
 .main-container {
@@ -199,7 +230,6 @@ body {
 }
 
 .advantages-list-content {
-  height: 384px;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -221,6 +251,12 @@ body {
   padding-bottom: 20px;
 }
 
+.advantages-title-content {
+  margin: 0;
+  padding: 0;
+  padding-top: 98px;
+}
+
 .advantages-number,
 .advantages-number-white {
   padding-top: 29px;
@@ -228,6 +264,13 @@ body {
 
 .advantages-description {
   width: 250px;
+  margin: 0;
+  padding-bottom: 79px;
+}
+
+.advantages-description-content {
+  padding-top: 30px;
+  padding-bottom: 108px;
 }
 
 .advantages-title-white {
@@ -238,7 +281,8 @@ body {
 }
 
 .advantages-description-white {
-  margin: 30px 90px 87px;
+  width: 220px;
+  padding: 30px 90px 87px;
 }
 
 .advantages-title-white,
@@ -251,9 +295,14 @@ body {
   height: 384px;
 }
 
+.advantages-img-icon {
+  padding-top: 90px;
+}
+
 .search {
+  padding-top: 91px;
+  padding-bottom: 93px;
   text-align: center;
-  height: 417px;
   width: 100%;
   display: block;
 }
@@ -264,7 +313,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 91px;
   margin-bottom: 29px;
 }
 
@@ -272,24 +320,31 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  margin: 29px 240px 71px;
+  margin-bottom: 56px;
 }
 
 .button-search {
+  display: inline-block;
   font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756257;
   text-decoration: none;
-  margin-bottom: 93px;
+  min-width: 575px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
 }
 
 .email {
   background-image: url("/images/background-email-page.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  min-height: 411px;
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .email-title {
@@ -297,22 +352,46 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 94px 0 29px;
+  margin: 0;
+  padding-bottom: 29px;
 }
 
 .email-subtitle {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
+  padding: 0;
+  margin: 0;
   padding-bottom: 46px;
 }
 
+.email-form {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  height: 60px;
+  min-width: 600px;
+  border-radius: 10px 0 0 10px;
+  border-style: none;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  padding-left: 22px;
+}
+
 .button-email {
+  min-width: 200px;
+  border-radius: 0 10px 10px 0;
+  border-style: none;
   font-size: 20px;
+  line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #83b3d3;
+  padding: 0;
 }
 
 .footer {
@@ -321,6 +400,16 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 40px 0;
+}
+
+.social-network {
+  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-social-network {
+  padding-right: 29px;
 }
 
 .phone {
@@ -474,7 +563,7 @@ body {
   width: 619px;
   height: 60px;
   margin: 84px 290px 60px;
-  }
+}
 
 .pagination-container {
   display: flex;
