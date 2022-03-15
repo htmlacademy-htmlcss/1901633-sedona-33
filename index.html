@@ -8,34 +8,34 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list-logo">
-          <li class="navigation-item-logo">
-            <a class="navigation-link">
-              <img
-                class="navigation-logo"
-                src="images/logo-sedona.svg"
-                width="139"
-                height="70"
-                alt="Логотип города Седона"
-              />
-            </a>
-          </li>
-        </ul>
-        <div class="navigation-list-wrapper">
+        <div class="navigation-logo-wrapper">
+          <a class="navigation-logo-link">
+            <img
+              class="navigation-logo"
+              src="images/logo-sedona.svg"
+              width="139"
+              height="70"
+              alt="Логотип города Седона"
+            />
+          </a>
+        </div>
+        <div class="navigation-wrapper">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link">Главная</a>
+              <a class="navigation-link navigation-link-main" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" href="#"
+                >Гостиницы</a
+              >
             </li>
           </ul>
         </div>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          <li class="">
             <a class="navigation-link" href="#">
               <svg
                 class="navigation-icon"
@@ -55,7 +55,7 @@
               <span class="visually-hidden"> Поиск </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="" style="margin-right: 20px">
             <a class="navigation-link" href="#">
               <svg
                 class="navigation-icon"
@@ -87,10 +87,10 @@
               <span class="visually-hidden"> Избранное </span>
             </a>
           </li>
+          <li>
+            <a class="navigation-button-item" href="#"> Хочу сюда! </a>
+          </li>
         </ul>
-        <div class="navigation-button">
-          <a class="navigation-button-item" href="#"> Хочу сюда! </a>
-        </div>
       </nav>
     </header>
 
