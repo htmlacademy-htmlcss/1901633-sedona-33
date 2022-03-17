@@ -9,7 +9,7 @@
     <header class="page-header">
       <nav class="navigation">
         <div class="navigation-logo-wrapper">
-          <a class="navigation-logo-link">
+          <a class="navigation-logo-link" href="index.html">
             <img
               class="navigation-logo"
               src="images/logo-sedona.svg"
@@ -140,7 +140,6 @@
               <a class="way-link" href="#">Гостиницы </a>
             </li>
           </ul>
-
           <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
           <form
             class="catalog-filter"
@@ -229,39 +228,40 @@
                 </li>
               </ul>
             </fieldset>
-
-            <fieldset class="filter-range">
-              <legend class="filter-range-title">Стоимость,&#8381;:</legend>
-              <label class="min-price">
-                <input
-                  class="range"
-                  type="number"
-                  name="min-price"
-                  min="0"
-                  placeholder="0 от"
-                />
-              </label>
-              <label class="max-price">
-                <input
-                  class="range"
-                  type="number"
-                  name="max-price"
-                  min="0"
-                  placeholder="9000 до"
-                />
-              </label>
-              <div class="range-scale">
-                <div class="range-bar">
-                  <button type="button" class="button-toggle toggle-min">
-                    <span class="visually-hidden"
-                      >Изменить минимальную цену</span
-                    >
-                  </button>
-                  <button type="button" class="button-toggle toggle-max">
-                    <span class="visually-hidden"
-                      >Изменить максимальную цену</span
-                    >
-                  </button>
+            <fieldset class="catalog-filter-group catalog-filter-group-price">
+              <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label class="min-price">
+                    <input
+                      class="range-input range-input-min"
+                      type="text"
+                      value="0"
+                      name="min-price"
+                    />
+                  </label>
+                  <label class="max-price">
+                    <input
+                      class="range-input range-input-max"
+                      type="number"
+                      value="9000"
+                      name="max-price"
+                    />
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button type="button" class="button-toggle toggle-min">
+                      <span class="visually-hidden"
+                        >Изменить минимальную цену</span
+                      >
+                    </button>
+                    <button type="button" class="button-toggle toggle-max">
+                      <span class="visually-hidden"
+                        >Изменить максимальную цену</span
+                      >
+                    </button>
+                  </div>
                 </div>
               </div>
             </fieldset>
@@ -628,7 +628,7 @@
         </div>
 
         <div class="developer">
-          <a href="https://htmlacademy.ru/">
+          <a class="developer-icon" href="https://htmlacademy.ru/">
             <svg
               aria-hidden="true"
               focusable="false"
