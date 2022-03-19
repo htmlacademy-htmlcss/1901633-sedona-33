@@ -50,6 +50,7 @@ body {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   min-width: 1200px;
 }
 
@@ -149,7 +150,7 @@ body {
 }
 
 .navigation-item-user {
-  margin-right: 20px
+  margin-right: 20px;
 }
 
 .navigation-button-item {
@@ -377,7 +378,6 @@ body {
   line-height: 26px;
   color: #333333;
   margin-bottom: 56px;
-  
 }
 
 .button-search {
@@ -482,7 +482,6 @@ body {
   background-color: #83b3d3;
   padding: 0;
   cursor: pointer;
-
 }
 
 .button-email:focus {
@@ -578,7 +577,7 @@ body {
   margin-right: 70px;
 }
 
-.phone{
+.phone {
   display: flex;
   margin: 0;
   padding: 15px;
@@ -604,7 +603,7 @@ body {
   border-radius: 10px;
 }
 
-.developer-icon{
+.developer-icon {
   margin: 0;
   padding: 0;
   display: flex;
@@ -1097,7 +1096,7 @@ body {
 .button-sorting {
   width: 44px;
   height: 44px;
-  border: 2px solid #E6E6E6;
+  border: 2px solid #e6e6e6;
   border-radius: 4px;
   margin-right: 8px;
 }
@@ -1411,7 +1410,7 @@ body {
   border-radius: 4px;
 }
 
-.pagination-item:active .pagination-link {
+.pagination-item:active:not(:first-child) .pagination-link {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
   outline: none;
@@ -1458,4 +1457,314 @@ body {
 
 .email-subtitle-inner {
   color: #333333;
+}
+
+/* Стили для модального окна*/
+
+.modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.booking-modal {
+  width: 715px;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-first-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-title {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 499px;
+  min-height: 67px;
+  text-align: start;
+  margin: 0;
+  margin-top: 62px;
+  margin-left: 68px;
+  margin-bottom: 32px;
+}
+
+.close-modal {
+  position: relative;
+  width: 53px;
+  height: 53px;
+  padding: 0;
+  margin-top: 54px;
+  margin-left: 25px;
+  margin-right: 70px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.close-button {
+  position: absolute;
+  fill: #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-modal:hover {
+  background-color: #e6e6e6;
+}
+
+.close-modal:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.close-modal:active {
+  outline: none;
+  background-color: #e6e6e6;
+  fill-opacity: 0.3;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-date-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.input-label {
+  width: 155px;
+  margin-left: 70px;
+  margin-right: 0;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.date-input {
+  width: 346px;
+  height: 50px;
+  padding: 0;
+  margin-left: 0;
+  padding-left: 19px;
+  padding-right: 53px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  background-image: url("../images/modal/modal-calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 19px center;
+}
+
+.date-input:hover {
+  background-color: #e6e6e6;
+}
+
+.date-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.date-input:active {
+  background-color: #ffffff;
+  outline: 2px solid #000000;
+}
+
+.input-customers-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info-message {
+  margin: 0;
+  padding: 0;
+  width: 420px;
+  margin-left: 225px;
+  margin-bottom: 11px;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.error-message {
+  color: #ff5757;
+}
+
+.customers-number {
+  width: 57px;
+  height: 50px;
+  padding: 0;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.customers-number:focus {
+  outline: none;
+}
+
+.input-label-children {
+  width: 54px;
+  margin-left: 56px;
+}
+
+.minus-button,
+.plus-button {
+  position: relative;
+  align-self: stretch;
+  width: 38px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.minus-button {
+  border-radius: 4px 0 0 4px;
+}
+
+.plus-button {
+  border-radius: 0 4px 4px 0;
+}
+
+.minus,
+.plus {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  fill: #000000;
+  opacity: 0.3;
+  border: 3px solid #f2f2f2;
+  border-radius: 4px;
+  top: 20px;
+}
+
+.minus {
+  left: 13px;
+}
+
+.plus {
+  right: 0;
+  top: 15px;
+}
+
+.minus-button:hover > .minus,
+.plus-button:hover > .plus {
+  opacity: 1;
+}
+
+.minus-button:focus,
+.plus-button:focus {
+  outline: none;
+}
+
+.minus-button:focus > .minus,
+.plus-button:focus > .plus {
+  border-color: #83b3d3;
+  opacity: 1;
+  outline: none;
+}
+
+.minus-button:active > .minus,
+.plus-button:active > .plus {
+  opacity: 0.2;
+  border-color: #f2f2f2;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-button {
+  align-self: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 18px;
+  background-color: #83b3d3;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+}
+
+.tooltip-button:hover {
+  background-color: #68a2ca;
+}
+
+.tooltip-button:focus {
+  outline: none;
+  background-color: #68a2ca;
+}
+
+.tooltip-window {
+  position: absolute;
+  top: 40px;
+  left: -116px;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+}
+
+.tooltip-window::before {
+  content: "";
+  background-image: url("../images/modal/modal-arrow-popup.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip-button:hover + .tooltip-window,
+.tooltip-button:focus + .tooltip-window {
+  display: block;
+}
+
+.search-blue-button {
+  width: 575px;
+  height: 60px;
+  margin: 40px auto 70px;
+  font-size: 20px;
+  line-height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #83b3d3;
+  color: #ffffff;
+  text-transform: uppercase;
 }
