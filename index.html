@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32X32" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
     <header class="page-header">
@@ -104,12 +104,8 @@
           height="352"
           alt="Добро пожаловать в великолепную Седону"
         />
-        <img
-          class="img-main-bottom"
-          alt="Фартук"
-          src="/images/index-background-bottom.png"
-        />
       </div>
+
       <section class="info">
         <h2 class="visually-hidden">Краткая информация о Седоне</h2>
         <p class="info-title">
@@ -185,7 +181,7 @@
           <li class="advantages-item">
             <div class="advantages-list-content">
               <img
-                class="advantages-img-icon"
+                class="advantages-img-icon advantages-icon-souvenirs"
                 src="/images/advantages-souvenirs.svg"
                 width="64"
                 height="76"
@@ -303,7 +299,7 @@
       <div class="social-network">
         <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="icon-list">
-          <li class="icon-item twitter">
+          <li class="icon-item">
             <a
               class="button-social-network"
               href="https://twitter.com/htmlacademy_ru"
@@ -329,7 +325,7 @@
               <span class="visually-hidden">Твиттер.</span>
             </a>
           </li>
-          <li class="icon-item facebook">
+          <li class="icon-item">
             <a
               class="button-social-network"
               href="https://www.facebook.com/htmlacademy"
@@ -351,7 +347,7 @@
               <span class="visually-hidden">Фейсбук.</span>
             </a>
           </li>
-          <li class="icon-item youtube">
+          <li class="icon-item">
             <a
               class="button-social-network"
               href="https://www.youtube.com/c/HTMLAcademyRUS"
@@ -421,7 +417,6 @@
       </div>
     </footer>
 
-    <!-- для показа окна убрать display: none; у класса modal-container-close -->
     <div class="modal-container modal-container-close">
       <div class="booking-modal">
         <h2 class="visually-hidden">
@@ -501,7 +496,6 @@
               name="adult"
               value="2"
               id="adult"
-              min="0"
               required
             />
             <button class="plus-button" type="button" name="plus-button-adult">
@@ -523,17 +517,16 @@
                 class="tooltip-button"
                 type="button"
                 name="tooltip-button"
-                aria-labelledby="tooltip-label"
               >
                 i
                 <span class="visually-hidden"
                   >Посмотреть дополнительную информацию</span
                 >
               </button>
-              <div class="tooltip-window">
+              <span class="tooltip-window">
                 Укажите количество детей, которые будут с вами, возраст которых
                 от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-              </div>
+              </span>
             </span>
             <button
               class="minus-button"
@@ -556,7 +549,6 @@
               name="children"
               value="1"
               id="children"
-              min="0"
               required
             />
             <button
