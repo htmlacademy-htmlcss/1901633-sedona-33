@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32X32" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
     <header class="page-header">
@@ -97,8 +97,8 @@
     </header>
 
     <main class="main-catalog main-container">
-      <div class="container">
-        <section class="hotel-filter">
+      <section class="hotel-filter">
+        <div class="container">
           <h1 class="hotels-sedona">Гостиницы Седоны</h1>
           <ul class="way">
             <li class="way-item">
@@ -160,7 +160,7 @@
                       checked
                     />
                     <span class="control-mark"></span>
-                    <span class="control-label">Бассейн</span>
+                    <span>Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -172,7 +172,7 @@
                       checked
                     />
                     <span class="control-mark"></span>
-                    <span class="control-label">Парковка</span>
+                    <span>Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -183,7 +183,7 @@
                       name="wi-fi"
                     />
                     <span class="control-mark"></span>
-                    <span class="control-label">WI-FI</span>
+                    <span>WI-FI</span>
                   </label>
                 </li>
               </ul>
@@ -201,7 +201,7 @@
                       checked
                     />
                     <span class="control-mark marker-house"></span>
-                    <span class="control-label">Гостиница</span>
+                    <span>Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -213,7 +213,7 @@
                       value="motel"
                     />
                     <span class="control-mark marker-house"></span>
-                    <span class="control-label">Мотель</span>
+                    <span>Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -225,45 +225,43 @@
                       value="apartments"
                     />
                     <span class="control-mark marker-house"></span>
-                    <span class="control-label">Апартаменты</span>
+                    <span>Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group catalog-filter-group-price">
               <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
-              <div class="range">
-                <div class="range-wrapper-inputs">
-                  <label class="min-price">
-                    <input
-                      class="range-input range-input-min"
-                      type="text"
-                      value="0"
-                      name="min-price"
-                    />
-                  </label>
-                  <label class="max-price">
-                    <input
-                      class="range-input range-input-max"
-                      type="number"
-                      value="9000"
-                      name="max-price"
-                    />
-                  </label>
-                </div>
-                <div class="range-scale">
-                  <div class="range-bar">
-                    <button type="button" class="button-toggle toggle-min">
-                      <span class="visually-hidden"
-                        >Изменить минимальную цену</span
-                      >
-                    </button>
-                    <button type="button" class="button-toggle toggle-max">
-                      <span class="visually-hidden"
-                        >Изменить максимальную цену</span
-                      >
-                    </button>
-                  </div>
+              <div class="range-wrapper-inputs">
+                <label class="min-price">
+                  <input
+                    class="range-input range-input-min"
+                    type="text"
+                    value="0"
+                    name="min-price"
+                  />
+                </label>
+                <label class="max-price">
+                  <input
+                    class="range-input range-input-max"
+                    type="number"
+                    value="9000"
+                    name="max-price"
+                  />
+                </label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button type="button" class="button-toggle toggle-min">
+                    <span class="visually-hidden"
+                      >Изменить минимальную цену</span
+                    >
+                  </button>
+                  <button type="button" class="button-toggle toggle-max">
+                    <span class="visually-hidden"
+                      >Изменить максимальную цену</span
+                    >
+                  </button>
                 </div>
               </div>
             </fieldset>
@@ -272,8 +270,10 @@
               <button class="reset-button" type="reset">Сбросить</button>
             </div>
           </form>
-        </section>
+        </div>
+      </section>
 
+      <div class="container">
         <section class="hotels">
           <h2 class="visually-hidden">Выбор гостиниц</h2>
           <div class="sorting">
@@ -303,7 +303,6 @@
             <li class="choice-housing-item">
               <a class="choice-housing-link" href="#">
                 <img
-                  class="choice-housing-image"
                   src="images/catalog/cataloghotel-1.jpg"
                   width="300"
                   height="206"
@@ -361,7 +360,6 @@
             <li class="choice-housing-item">
               <a class="choice-housing-link" href="#">
                 <img
-                  class="choice-housing-image"
                   src="images/catalog/cataloghotel-2.jpg"
                   width="300"
                   height="206"
@@ -410,7 +408,6 @@
             <li class="choice-housing-item">
               <a class="choice-housing-link" href="#">
                 <img
-                  class="choice-housing-image"
                   src="images/catalog/cataloghotel-3.jpg"
                   width="300"
                   height="206"
@@ -454,7 +451,6 @@
             <li class="choice-housing-item">
               <a class="choice-housing-link" href="#">
                 <img
-                  class="choice-housing-image"
                   src="images/catalog/cataloghotel-4.jpg"
                   width="300"
                   height="206"
@@ -542,7 +538,7 @@
               бойскаутское!
             </p>
             <form
-              class="email-form email-form-inner"
+              class="email-form"
               action="https://echo.htmlacademy.ru/"
               method="post"
             >
@@ -550,6 +546,7 @@
                 class="field field-inner"
                 placeholder="Ваш e-mail"
                 type="email"
+                name="new-email"
               />
               <button class="button-email" type="submit">
                 Подписаться
@@ -563,9 +560,9 @@
 
     <footer class="footer">
       <div class="social-network">
-        <h3 class="visually-hidden">Социальные сети</h3>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="icon-list">
-          <li class="icon-item twitter">
+          <li class="icon-item">
             <a
               class="button-social-network"
               href="https://twitter.com/htmlacademy_ru"
@@ -591,7 +588,7 @@
               <span class="visually-hidden">Твиттер.</span>
             </a>
           </li>
-          <li class="icon-item facebook">
+          <li class="icon-item">
             <a
               class="button-social-network"
               href="https://www.facebook.com/htmlacademy"
@@ -613,7 +610,7 @@
               <span class="visually-hidden">Фейсбук.</span>
             </a>
           </li>
-          <li class="icon-item youtube">
+          <li class="icon-item">
             <a
               class="button-social-network"
               href="https://www.youtube.com/c/HTMLAcademyRUS"
@@ -682,180 +679,5 @@
         </a>
       </div>
     </footer>
-
-    <!-- для показа окна убрать display: none; у класса modal-container-close -->
-    <div class="modal-container modal-container-close">
-      <div class="booking-modal">
-        <h2 class="visually-hidden">
-          Модальное окно для поиска гостиниц в Седоне
-        </h2>
-
-        <div class="modal-first-row">
-          <p class="modal-title section-title">Поиск гостиницы в Cедоне</p>
-          <button class="close-modal" type="button">
-            <span class="visually-hidden">Закрыть</span>
-            <svg
-              class="close-button"
-              width="13"
-              height="13"
-              viewBox="0 0 13 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"
-                fill="black"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <form
-          class="booking-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <div class="input-date-form">
-            <label class="input-label" for="entry-date">Дата заезда:</label>
-            <input
-              class="date-input"
-              type="text"
-              id="entry-date"
-              name="entry-date"
-              placeholder="Укажите дату"
-              required
-            />
-            <!-- для показа сообщения убрать visibility: hidden у класса info-message -->
-            <p class="info-message error-message">
-              Мы не можем отправить вас в прошлое.
-            </p>
-          </div>
-
-          <div class="input-date-form">
-            <label class="input-label" for="departure-date">Дата выезда:</label>
-            <input
-              class="date-input"
-              type="text"
-              id="departure-date"
-              name="departure-date"
-              placeholder="Укажите дату"
-              required
-            />
-            <!-- для открытия убрать visibility: hidden у класса info-message -->
-            <p class="info-message">
-              На эти даты есть свободные номера. Пока есть.
-            </p>
-          </div>
-
-          <div class="input-customers-form">
-            <label class="input-label" for="adult">Взрослые: </label>
-            <button
-              class="minus-button"
-              type="button"
-              name="minus-button-adult"
-            >
-              <svg
-                class="minus"
-                width="13"
-                height="1"
-                viewBox="0 0 13 1"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
-              </svg>
-            </button>
-            <input
-              class="customers-number"
-              type="text"
-              name="adult"
-              value="2"
-              id="adult"
-              min="0"
-              required
-            />
-            <button class="plus-button" type="button" name="plus-button-adult">
-              <svg
-                class="plus"
-                width="13"
-                height="13"
-                viewBox="0 0 13 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
-              </svg>
-            </button>
-
-            <label class="input-label input-label-children" for="children">
-              Дети:
-            </label>
-
-            <span class="tooltip">
-              <button
-                class="tooltip-button"
-                type="button"
-                name="tooltip-button"
-                aria-labelledby="tooltip-label"
-              >
-                i
-                <span class="visually-hidden"
-                  >Посмотреть дополнительную информацию</span
-                >
-              </button>
-
-              <div class="tooltip-window">
-                Укажите количество детей, которые будут с вами, возраст которых
-                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-              </div>
-            </span>
-            <button
-              class="minus-button"
-              type="button"
-              name="minus-button-children"
-            >
-              <svg
-                class="minus"
-                width="13"
-                height="1"
-                viewBox="0 0 13 1"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0v1h13V0H0Z" fill="#000" />
-              </svg>
-            </button>
-            <input
-              class="customers-number"
-              type="text"
-              name="children"
-              value="1"
-              id="children"
-              min="0"
-              required
-            />
-            <button
-              class="plus-button"
-              type="button"
-              name="plus-button-children"
-            >
-              <svg
-                class="plus"
-                width="13"
-                height="13"
-                viewBox="0 0 13 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" />
-              </svg>
-            </button>
-          </div>
-          <button class="search-blue-button light-blue-button" type="submit">
-            Найти
-          </button>
-        </form>
-      </div>
-    </div>
   </body>
 </html>

@@ -20,7 +20,12 @@ html {
 
 body {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100%;
   width: 1200px;
@@ -49,7 +54,10 @@ body {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-width: 1200px;
 }
@@ -65,13 +73,23 @@ body {
 }
 
 .navigation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 550px;
   margin-left: 256px;
 }
 
 .navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -80,8 +98,6 @@ body {
 
 .navigation-link {
   position: relative;
-  display: block;
-  padding-top: 20px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -90,6 +106,8 @@ body {
   text-decoration: none;
   padding: 0;
   margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .navigation-link:hover {
@@ -102,13 +120,17 @@ body {
   outline: none;
 }
 
-.navigation-item:not(:last-child) {
+.navigation-item {
   padding-right: 34px;
+}
+
+.navigation-item:last-child {
+  padding-right: 0;
 }
 
 .navigation-user {
   margin-left: auto;
-  margin-right: 70px;
+  min-width: 336px;
 }
 
 .navigation-link-main::before {
@@ -117,7 +139,7 @@ body {
   height: 2px;
   width: 68px;
   bottom: 0;
-  top: 45px;
+  top: 64px;
   background-color: #756257;
 }
 
@@ -127,11 +149,13 @@ body {
   height: 2px;
   width: 93px;
   bottom: 0;
-  top: 45px;
+  top: 64px;
   background-color: #756257;
 }
 
 .navigation-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   fill: #000000;
 }
@@ -187,12 +211,6 @@ body {
   background-color: #615048;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
-/* Стили для основного блока */
-
 .container {
   width: 1057px;
   margin: 0 auto;
@@ -202,12 +220,18 @@ body {
   margin: 0;
 }
 
+.main-container {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .index-main {
-  background-image: url("/images/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: 485px;
-  position: relative;
+  background-image: url("/images/index-background-bottom.png"),
+    url("/images/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% auto, 100% auto;
+  background-position: bottom, top;
   color: #000000;
   background-color: #ffffff;
 }
@@ -216,18 +240,20 @@ body {
   display: block;
   margin: 0 auto;
   padding-top: 51px;
-}
-
-.img-main-bottom {
-  position: absolute;
-  bottom: 0;
+  padding-bottom: 82px;
 }
 
 .info {
   text-align: center;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   display: block;
 }
@@ -252,8 +278,6 @@ body {
   padding-bottom: 80px;
 }
 
-/* Стили для блока преимуществ */
-
 .advantages {
   text-align: center;
 }
@@ -264,12 +288,16 @@ body {
 }
 
 .advantages-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
 }
 
 .advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -286,9 +314,18 @@ body {
 
 .advantages-list-content {
   width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -320,7 +357,7 @@ body {
 .advantages-description {
   width: 250px;
   margin: 0;
-  padding-bottom: 79px;
+  padding-bottom: 87px;
 }
 
 .advantages-description-content {
@@ -354,7 +391,9 @@ body {
   padding-top: 90px;
 }
 
-/* Стили для поиска гостиниц */
+.advantages-icon-souvenirs {
+  padding-top: 85px;
+}
 
 .search {
   padding-top: 91px;
@@ -391,7 +430,7 @@ body {
   text-decoration: none;
   min-width: 575px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 9px;
   border-radius: 10px;
 }
 
@@ -408,8 +447,6 @@ body {
 .button-search:hover {
   background-color: #615048;
 }
-
-/* Стили для блока подписки на рассылку */
 
 .email {
   background-image: url("/images/background-email-page.jpg");
@@ -439,7 +476,11 @@ body {
 }
 
 .email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -503,51 +544,68 @@ body {
   background-color: #f2f2f2;
 }
 
-/* Стили для подвала сайта*/
-
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
-  display: flex;
-  align-items: center;
-  align-items: center;
+  min-height: 114px;
 }
 
 .social-network {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 200px;
 }
 
 .icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   height: 40px;
-  margin-right: 82px;
-  margin-left: 13px;
-  margin-bottom: 5px;
+  margin-right: 49px;
+  margin-left: 62px;
+  margin-bottom: 3px;
 }
 
 .icon-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 40px;
   margin-right: 3px;
 }
 
 .button-social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 40px;
   height: 40px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -560,24 +618,29 @@ body {
   fill: #68a2ca;
 }
 
-.icon-social:active {
-  opacity: 0.3;
-}
-
 .icon-social {
   fill: #83b3d3;
 }
 
+.icon-social:active {
+  opacity: 0.3;
+}
+
 .footer-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   width: 720px;
-  justify-content: center;
-  margin-right: 70px;
 }
 
 .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 15px;
@@ -587,6 +650,7 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -604,12 +668,7 @@ body {
 }
 
 .developer-icon {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
+  margin-left: 52px;
 }
 
 .logo-htmlacademy {
@@ -629,17 +688,18 @@ body {
   border-radius: 18px 22px;
 }
 
-/* Разметка страницы каталога */
-
 .main-catalog {
-  background-image: url("/images/catalog/catalog-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .hotel-filter {
+  background-image: url("/images/catalog/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   min-height: 408px;
+  color: #ffffff;
+  background-color: #333333;
 }
 
 .hotels-sedona {
@@ -651,6 +711,8 @@ body {
 }
 
 .way {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
@@ -685,18 +747,27 @@ body {
 }
 
 .icon-arrow-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-right: 10px;
   padding-top: 7px;
 }
 
 .catalog-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #ffffff;
 }
 
 .catalog-filter-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 200px;
   border: none;
@@ -824,8 +895,6 @@ body {
   left: 5px;
 }
 
-/* range */
-
 .catalog-filter-group-price {
   width: 287px;
   margin-right: 81px;
@@ -880,17 +949,19 @@ body {
 }
 
 .range-wrapper-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .range-input {
   display: block;
   width: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 14px;
   padding-bottom: 11px;
-  padding-left: 19px;
-  padding-right: 19px;
+  padding-left: 15px;
   background-color: transparent;
   border: 2px solid #ffffff;
   margin-top: 34px;
@@ -898,17 +969,19 @@ body {
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 20px;
 }
 
 .range-input:focus {
   outline: 2px solid #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #81b3d2, 0px 0px 0px 3px #81b3d2;
   box-shadow: inset 0px 0px 0px 3px #81b3d2, 0px 0px 0px 3px #81b3d2;
 }
 
 .range-input:active {
   background-color: #756257;
   outline: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -953,14 +1026,18 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-/* Стилизация кнопок цены */
-
 .catalog-filter-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 60px;
 }
@@ -1029,9 +1106,9 @@ body {
   opacity: 0.6;
 }
 
-/* Стили для сортировки гостиниц */
-
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 44px;
   margin-right: 72px;
@@ -1052,7 +1129,11 @@ body {
 
 .sorting-control {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1075,6 +1156,8 @@ body {
   background-image: url("/images/catalog/arrow-down-catalog.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1137,10 +1220,10 @@ body {
   background-position: center;
 }
 
-/* Стили для каталога гостиниц */
-
 .choice-housing {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 340px 18px 340px 18px 340px;
   grid-template-columns: 340px 340px 340px;
   list-style-type: none;
   padding: 0;
@@ -1182,6 +1265,8 @@ body {
 }
 
 .choice-subtitle-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1286,13 +1371,21 @@ body {
 }
 
 .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0;
 }
 
 .rating-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1355,13 +1448,15 @@ body {
   background-color: #68a2ca;
 }
 
-/* Пагинация */
-
 .pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1374,8 +1469,14 @@ body {
 }
 
 .pagination-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 55px;
   height: 55px;
@@ -1459,12 +1560,12 @@ body {
   color: #333333;
 }
 
-/* Стили для модального окна*/
-
 .modal-container {
   position: fixed;
   left: 0;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
@@ -1479,12 +1580,18 @@ body {
   width: 715px;
   margin: auto;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
 .modal-first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -1507,7 +1614,7 @@ body {
   width: 53px;
   height: 53px;
   padding: 0;
-  margin-top: 54px;
+  margin-top: 55px;
   margin-left: 25px;
   margin-right: 70px;
   border-radius: 50%;
@@ -1520,6 +1627,8 @@ body {
   fill: #000000;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -1539,13 +1648,24 @@ body {
 }
 
 .booking-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .input-date-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1554,7 +1674,7 @@ body {
   margin-left: 70px;
   margin-right: 0;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 50px;
   font-weight: 700;
   color: #000000;
 }
@@ -1593,9 +1713,17 @@ body {
 }
 
 .input-customers-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1639,6 +1767,8 @@ body {
 .minus-button,
 .plus-button {
   position: relative;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch;
   width: 38px;
   border: none;
@@ -1703,6 +1833,8 @@ body {
 }
 
 .tooltip-button {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   width: 25px;
   height: 25px;
@@ -1711,6 +1843,7 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 50%;
+  margin-top: 10px;
 }
 
 .tooltip-button:hover {
@@ -1733,6 +1866,7 @@ body {
   line-height: 20px;
   color: #ffffff;
   background-color: #333333;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   display: none;
