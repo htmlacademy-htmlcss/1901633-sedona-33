@@ -1391,6 +1391,7 @@ body {
 
 .rating-item {
   padding-right: 7px;
+  list-style-type: none;
 }
 
 .rating-product {
