@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -227,8 +227,8 @@ body {
 }
 
 .index-main {
-  background-image: url("/images/index-background-bottom.png"),
-    url("/images/index-background.jpg");
+  background-image: url("../images/index-background-bottom.png"),
+    url("../images/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, 100% auto;
   background-position: bottom, top;
@@ -449,7 +449,7 @@ body {
 }
 
 .email {
-  background-image: url("/images/background-email-page.jpg");
+  background-image: url("../images/background-email-page.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
@@ -694,7 +694,7 @@ body {
 }
 
 .hotel-filter {
-  background-image: url("/images/catalog/catalog-background.jpg");
+  background-image: url("../images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 408px;
@@ -860,7 +860,7 @@ body {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("/images/catalog/checkbox.svg");
+  background-image: url("../images/catalog/checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1153,7 +1153,7 @@ body {
 }
 
 .select-form {
-  background-image: url("/images/catalog/arrow-down-catalog.svg");
+  background-image: url("../images/catalog/arrow-down-catalog.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
   -webkit-appearance: none;
@@ -1203,19 +1203,19 @@ body {
 }
 
 .button-tiles {
-  background-image: url("/images/catalog/sorting-icon-left.svg");
+  background-image: url("../images/catalog/sorting-icon-left.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-slideshow {
-  background-image: url("/images/catalog/sorting-icon-center.svg");
+  background-image: url("../images/catalog/sorting-icon-center.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-list {
-  background-image: url("/images/catalog/sorting-icon-right.svg");
+  background-image: url("../images/catalog/sorting-icon-right.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
