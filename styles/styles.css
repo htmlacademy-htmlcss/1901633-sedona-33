@@ -228,12 +228,12 @@ body {
 
 .index-main {
   background-image: url("../images/index-background-bottom.png"),
-    url("../images/index-background.jpg");
+  url("../images/index-background.jpg"); 
   background-repeat: no-repeat, no-repeat;
   background-size: 100% auto, 100% auto;
   background-position: bottom, top;
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #333333;
 }
 
 .img-main {
